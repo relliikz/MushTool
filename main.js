@@ -200,7 +200,7 @@ function changeBackgroundImage(element) {
         iaText.innerHTML = "20 boss, 20% crit, 21 att";
         for(let i=1; i<10; i++){
           let currentnode=document.getElementById("node"+i);
-          currentnode.style.backgroundImage = "url('nodes/heroes/mercedes"+ i +".png')";
+          currentnode.style.backgroundImage = "url('nodes/heroes/merc"+ i +".png')";
         }
         break;
       case "23":
@@ -404,7 +404,7 @@ function changeBackgroundImage(element) {
       case "47":
         buttonName.innerHTML = "Zero";
         iaText.innerHTML = "20 boss, 20% crit, 21 att";
-        for(let i=1; i<7; i++){
+        for(let i=1; i<10; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/other/zero"+ i +".png')";
         }
