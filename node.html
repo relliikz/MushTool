@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!--regular CSS-->
+    <link href="style.css" rel="stylesheet" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+
+  </head>
+  <body>
+
+    <!--Side Menu-->
+    <div class = "row row-cols 2">
+        <div class = "col-2">
+            <div id ="SideMenu" class="container-fluid p-5 bg-warning text-white">
+              <button id="nodeBtn" type="button" class="btn btn-danger" onclick="location = 'node.html'">Nodes/IA</button>
+              <button id="incomeBtn" type="button" class="btn btn-danger" onclick="location = 'weeklyBoss.html'">Income Calculator</button>
+            </div>
+        </div>
+
+        <!--Main Menu-->
+        <div class = "col-10">
+            <div id ="MainMenu" class="container-fluid bg-dark text-white">
+
+              <!--dropdown menu-->
+              <div class="dropdown">
+                  <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="jobBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                    Job Title
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="jobBtn">
+                    <h6 class="dropdown-header">Explorers</h6>
+                    <div class="dropdown-divider"></div>
+                    <li><button class="dropdown-item" type="button" value="0" onclick="changeBackgroundImage(this)">Hero</button></li>
+                    <li><button class="dropdown-item" type="button" value="1" onclick="changeBackgroundImage(this)">Paladin</button></li>
+                    <li><button class="dropdown-item" type="button" value="2" onclick="changeBackgroundImage(this)">Dark Knight</button></li>
+                    <li><button class="dropdown-item" type="button" value="3" onclick="changeBackgroundImage(this)">Bishop</button></li>
+                    <li><button class="dropdown-item" type="button" value="4" onclick="changeBackgroundImage(this)">Ice/Lightning</button></li>
+                    <li><button class="dropdown-item" type="button" value="5" onclick="changeBackgroundImage(this)">Fire/Poison</button></li>
+                    <li><button class="dropdown-item" type="button" value="6" onclick="changeBackgroundImage(this)">Dual Blade</button></li>
+                    <li><button class="dropdown-item" type="button" value="7" onclick="changeBackgroundImage(this)">Shadower</button></li>
+                    <li><button class="dropdown-item" type="button" value="8" onclick="changeBackgroundImage(this)">Night Lord</button></li>
+                    <li><button class="dropdown-item" type="button" value="9" onclick="changeBackgroundImage(this)">Pathfinder</button></li>
+                    <li><button class="dropdown-item" type="button" value="10" onclick="changeBackgroundImage(this)">Marksman</button></li>
+                    <li><button class="dropdown-item" type="button" value="11" onclick="changeBackgroundImage(this)">Bowmaster</button></li>
+                    <li><button class="dropdown-item" type="button" value="12" onclick="changeBackgroundImage(this)">Cannoneer</button></li>
+                    <li><button class="dropdown-item" type="button" value="13" onclick="changeBackgroundImage(this)">Buccaneer</button></li>
+                    <li><button class="dropdown-item" type="button" value="14" onclick="changeBackgroundImage(this)">Corsair</button></li>
+                    <li><button class="dropdown-item" type="button" value="15" onclick="changeBackgroundImage(this)">Jett</button></li>
+                    <div class="dropdown-divider"></div>
+                    <h6 class="dropdown-header">Cygnus Knights</h6>
+                    <div class="dropdown-divider"></div>
+                    <li><button class="dropdown-item" type="button" value="16" onclick="changeBackgroundImage(this)">Dawn Warrior</button></li>
+                    <li><button class="dropdown-item" type="button" value="17" onclick="changeBackgroundImage(this)">Blaze Wizard</button></li>
+                    <li><button class="dropdown-item" type="button" value="18" onclick="changeBackgroundImage(this)">Wind Archer</button></li>
+                    <li><button class="dropdown-item" type="button" value="19" onclick="changeBackgroundImage(this)">Night Walker</button></li>
+                    <li><button class="dropdown-item" type="button" value="20" onclick="changeBackgroundImage(this)">Thunder Breaker</button></li>
+                    <li><button class="dropdown-item" type="button" value="21" onclick="changeBackgroundImage(this)">Mihile</button></li>
+                    <div class="dropdown-divider"></div>
+                    <h6 class="dropdown-header">Heroes</h6>
+                    <div class="dropdown-divider"></div>
+                    <li><button class="dropdown-item" type="button" value="22" onclick="changeBackgroundImage(this)">Mercedes</button></li>
+                    <li><button class="dropdown-item" type="button" value="23" onclick="changeBackgroundImage(this)">Aran</button></li>
+                    <li><button class="dropdown-item" type="button" value="24" onclick="changeBackgroundImage(this)">Evan</button></li>
+                    <li><button class="dropdown-item" type="button" value="25" onclick="changeBackgroundImage(this)">Phantom</button></li>
+                    <li><button class="dropdown-item" type="button" value="26" onclick="changeBackgroundImage(this)">Luminous</button></li>
+                    <li><button class="dropdown-item" type="button" value="27" onclick="changeBackgroundImage(this)">Shade</button></li>
+                    <div class="dropdown-divider"></div>
+                    <h6 class="dropdown-header">Resistance</h6>
+                    <div class="dropdown-divider"></div>
+                    <li><button class="dropdown-item" type="button" value="28" onclick="changeBackgroundImage(this)">Battle Mage</button></li>
+                    <li><button class="dropdown-item" type="button" value="29" onclick="changeBackgroundImage(this)">Wild Hunter</button></li>
+                    <li><button class="dropdown-item" type="button" value="30" onclick="changeBackgroundImage(this)">Mechanic</button></li>
+                    <li><button class="dropdown-item" type="button" value="31" onclick="changeBackgroundImage(this)">Blaster</button></li>
+                    <li><button class="dropdown-item" type="button" value="32" onclick="changeBackgroundImage(this)">Xenon</button></li>
+                    <li><button class="dropdown-item" type="button" value="33" onclick="changeBackgroundImage(this)">Demon Slayer</button></li>
+                    <li><button class="dropdown-item" type="button" value="34" onclick="changeBackgroundImage(this)">Demon Avenger</button></li>
+                    <div class="dropdown-divider"></div>
+                    <h6 class="dropdown-header">Nova</h6>
+                    <div class="dropdown-divider"></div>
+                    <li><button class="dropdown-item" type="button" value="35" onclick="changeBackgroundImage(this)">Kaiser</button></li>
+                    <li><button class="dropdown-item" type="button" value="36" onclick="changeBackgroundImage(this)">Angelic Buster</button></li>
+                    <li><button class="dropdown-item" type="button" value="37" onclick="changeBackgroundImage(this)">Cadena</button></li>
+                    <li><button class="dropdown-item" type="button" value="38" onclick="changeBackgroundImage(this)">Kain</button></li>
+                    <div class="dropdown-divider"></div>
+                    <h6 class="dropdown-header">Sengoku</h6>
+                    <div class="dropdown-divider"></div>
+                    <li><button class="dropdown-item" type="button" value="39" onclick="changeBackgroundImage(this)">Hayato</button></li>
+                    <li><button class="dropdown-item" type="button" value="40" onclick="changeBackgroundImage(this)">Kanna</button></li>
+                    <div class="dropdown-divider"></div>
+                    <h6 class="dropdown-header">Flora</h6>
+                    <div class="dropdown-divider"></div>
+                    <li><button class="dropdown-item" type="button" value="41" onclick="changeBackgroundImage(this)">Adele</button></li>
+                    <li><button class="dropdown-item" type="button" value="42" onclick="changeBackgroundImage(this)">Ark</button></li>
+                    <li><button class="dropdown-item" type="button" value="43" onclick="changeBackgroundImage(this)">Illium</button></li>
+                    <div class="dropdown-divider"></div>
+                    <h6 class="dropdown-header">Anima</h6>
+                    <div class="dropdown-divider"></div>
+                    <li><button class="dropdown-item" type="button" value="44" onclick="changeBackgroundImage(this)">Hoyoung</button></li>
+                    <li><button class="dropdown-item" type="button" value="45" onclick="changeBackgroundImage(this)">Lara</button></li>
+                    <div class="dropdown-divider"></div>
+                    <h6 class="dropdown-header">Other</h6>
+                    <div class="dropdown-divider"></div>
+                    <li><button class="dropdown-item" type="button" value="46" onclick="changeBackgroundImage(this)">Kinesis</button></li>
+                    <li><button class="dropdown-item" type="button" value="47" onclick="changeBackgroundImage(this)">Zero</button></li>
+                    <li><button class="dropdown-item" type="button" value="48" onclick="changeBackgroundImage(this)">Beast Tamer</button></li>
+                  </ul>
+
+                  <!--Node Section-->
+              </div>
+              <div id ="nodeTitle" class="container-fluid bg-dark text-white">
+                <h1>Nodes</h1>
+              </div>
+              <div id ="nodeTrio1" class="container-fluid bg-warning text-white">
+                <h1>Trio #1</h1>
+                  <div id="node1" class="container-fluid bg-danger text-white"></div>
+                  <div id="node2" class="container-fluid bg-danger text-white"></div>
+                  <div id="node3" class="container-fluid bg-danger text-white"></div>
+              </div>
+              <div id ="nodeTrio2" class="container-fluid bg-danger text-white">
+                <h1>Trio #2</h1>
+                <div id="node4" class="container-fluid bg-warning text-white"></div>
+                <div id="node5" class="container-fluid bg-warning text-white"></div>
+                <div id="node6" class="container-fluid bg-warning text-white"></div>
+              </div>
+              <div id ="nodeTrio3" class="container-fluid bg-warning text-white">
+                <h1>Trio #3</h1>
+                <div id="node7" class="container-fluid bg-danger text-white"></div>
+                <div id="node8" class="container-fluid bg-danger text-white"></div>
+                <div id="node9" class="container-fluid bg-danger text-white"></div>
+              </div>
+
+              <!--IA Section-->
+              <hr id="separator">
+              <div id ="iaTitle" class="container-fluid bg-dark text-white">
+                <h1>IA</h1>
+              <div id="iaBox" class="container-fluid bg-light text-dark">
+                <h4 id="iaText"></h1>
+              </div>
+            </div>
+        </div>
+
+    </div>
+  </body>

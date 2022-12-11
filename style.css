@@ -1,0 +1,178 @@
+/* horizontal line */
+
+#separator{
+    background-color: white;
+    height: 3px;
+    opacity:inherit;
+    margin-top:30px;
+}
+
+/* main section */
+#SideMenu{
+    position: absolute;
+    width: 250px;
+    height: 980px;
+}
+
+#MainMenu{
+    margin-top: 40px;
+    position: absolute;
+    width: 1500px;
+    height: 900px;
+}
+
+/* node section */
+
+#jobBtn{
+    margin-top: 40px;
+    position:absolute;
+}
+
+.dropdown-header{
+    padding:0px;
+    margin-left:10px;
+}
+
+.dropdown-menu {
+    max-height:500px;
+    overflow-y:scroll;
+}
+
+#nodeTitle{
+    margin-top: 120px;
+    position: absolute;
+    width: 200px;
+    height: 75px;
+}
+
+#nodeTrio1{
+    margin-top: 220px;
+    margin-left: -10px;
+    position: absolute;
+    width: 490px;
+    height: 250px;
+}
+
+#nodeTrio2{
+    margin-top: 220px;
+    margin-left: 480px;
+    position: absolute;
+    width: 490px;
+    height: 250px;
+}
+
+#nodeTrio3{
+    margin-top: 220px;
+    margin-left: 970px;
+    width: 490px;
+    height: 250px;
+}
+
+/* node subsection */
+
+#node1{
+    width:60px;
+    height:60px;
+    margin-top: 50px;
+    margin-left: 50px;
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+
+#node2{
+    width:60px;
+    height:60px;
+    margin-top: -60px;
+    margin-left: 190px;
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+
+#node3{
+    width:60px;
+    height:60px;
+    margin-top: -60px;
+    margin-left: 330px;
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+
+#node4{
+    width:60px;
+    height:60px;
+    margin-top: 50px;
+    margin-left: 50px;
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+
+#node5{
+    width:60px;
+    height:60px;
+    margin-top: -60px;
+    margin-left: 190px;
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+
+#node6{
+    width:60px;
+    height:60px;
+    margin-top: -60px;
+    margin-left: 330px;
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+
+#node7{
+    width:60px;
+    height:60px;
+    margin-top: 50px;
+    margin-left: 50px;
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+
+#node8{
+    width:60px;
+    height:60px;
+    margin-top: -60px;
+    margin-left: 190px;
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+
+#node9{
+    width:60px;
+    height:60px;
+    margin-top: -60px;
+    margin-left: 330px;
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+
+/* nav bar */
+
+#nodeBtn{
+    margin-top: 100px;
+}
+
+#incomeBtn{
+    margin-top:20px;
+}
+
+/* ia section */
+
+#iaTitle{
+    position:absolute;
+    width: 200px;
+    height: 75px;
+}
+
+#iaBox{
+    width: 500px;
+    height: 350px;
+    margin-top:-50px;
+    margin-left: 150px;
+}
+
