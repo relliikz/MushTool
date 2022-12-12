@@ -5,6 +5,9 @@ function changeBackgroundImage(element) {
       for(let i=1; i<10; i++){
       let currentnode=document.getElementById("node"+i);
       currentnode.style.backgroundImage = "none";
+      currentnode.onmouseover=function(){
+        currentnode.innerHTML = "";
+      }
       currentnode.onmouseout=function(){
         currentnode.innerHTML = "";
       }
@@ -13,7 +16,7 @@ function changeBackgroundImage(element) {
       //array of skill names
       var skills = [
         ["Raging Blow","Cry Valhalla","Final Attack","Beam Blade","Rising Rage","Puncture"],
-        ["Blast","Divine Judgement+Mark","Divine Charge","Heaven's Hammer","Smite Shield","Final Attack"],
+        ["Blast","Divine Judgement/Mark","Divine Charge","Heaven's Hammer","Smite Shield","Final Attack"],
         ["Dark Impale","Gungir's Descent","Evil Eye","Nightshade Explosion","Final Attack","Leap Att/Rush/Upwards Charge"],
         ["Angel Ray","Big Bang","Bahamut","Heal/Angelic Wrath","Genesis/Triumph Feather","Heavens Door/Fountain"],
         ["Chain Lightning","Thunder Sphere","Lightning Orb","Blizzard","Elquines","Frozen Orb"],
@@ -106,6 +109,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/explorer/drk"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[2][i-1];
+          }
         }
         break;
       case "3":
@@ -116,6 +122,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/explorer/bish"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[3][i-1];
+          }
         }
         break;
       case "4":
@@ -126,6 +135,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/explorer/il"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[4][i-1];
+          }
         }
         break;
       case "5":
@@ -136,6 +148,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<10; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/explorer/fp"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[5][i-1];
+          }
         }
         break;
       case "6":
@@ -146,6 +161,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/explorer/db"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[6][i-1];
+          }
         }
         break;
       case "7":
@@ -156,6 +174,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/explorer/shad"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[7][i-1];
+          }
         }
         break;
       case "8":
@@ -166,6 +187,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/explorer/nl"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[8][i-1];
+          }
         }
         break;
       case "9":
@@ -176,6 +200,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<10; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/explorer/pf"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[9][i-1];
+          }
         }
         break;
       case "10":
@@ -186,6 +213,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<6; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/explorer/mm"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[10][i-1];
+          }
         }
         break;
       case "11":
@@ -196,6 +226,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/explorer/bm"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[11][i-1];
+          }
         }
         break;
       case "12":
@@ -206,6 +239,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/explorer/cannoneer"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[12][i-1];
+          }
         }
         break;
       case "13":
@@ -216,6 +252,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/explorer/bucc"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[13][i-1];
+          }
         }
         break;
       case "14":
@@ -226,6 +265,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<10; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/explorer/corsair"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[14][i-1];
+          }
         }
         break;
       case "15":
@@ -236,6 +278,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/explorer/jett"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[15][i-1];
+          }
         }
         break;
     //cygnus knights
@@ -247,6 +292,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<4; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/cygnus/dw"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[16][i-1];
+          }
         }
         break;
       case "17":
@@ -257,6 +305,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/cygnus/bw"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[17][i-1];
+          }
         }
         break;
       case "18":
@@ -267,6 +318,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/cygnus/wa"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[18][i-1];
+          }
         }
         break;
       case "19":
@@ -277,6 +331,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/cygnus/nw"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[19][i-1];
+          }
         }
         break;
       case "20":
@@ -287,6 +344,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/cygnus/tb"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[20][i-1];
+          }
         }
         break;
       case "21":
@@ -297,6 +357,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<6; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/cygnus/mihile"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[21][i-1];
+          }
         }
         break;
     //heroes
@@ -308,6 +371,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<10; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/heroes/merc"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[22][i-1];
+          }
         }
         break;
       case "23":
@@ -318,6 +384,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/heroes/aran"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[23][i-1];
+          }
         }
         break;
       case "24":
@@ -328,6 +397,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<10; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/heroes/evan"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[24][i-1];
+          }
         }
         break;
       case "25":
@@ -338,6 +410,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<10; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/heroes/phantom"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[25][i-1];
+          }
         }
         break;
       case "26":
@@ -348,6 +423,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/heroes/lumi"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[26][i-1];
+          }
         }
         break;
       case "27":
@@ -358,6 +436,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<10; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/heroes/shade"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[27][i-1];
+          }
         }
         break;
     //resistance
@@ -369,6 +450,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/resistance/bam"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[28][i-1];
+          }
         }
         break;
       case "29":
@@ -379,6 +463,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<10; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/resistance/wh"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[29][i-1];
+          }
         }
         break;
       case "30":
@@ -389,6 +476,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/resistance/mech"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[30][i-1];
+          }
         }
         break;
       case "31":
@@ -399,6 +489,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/resistance/blaster"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[31][i-1];
+          }
         }
         break;
       case "32":
@@ -409,6 +502,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<10; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/resistance/xenon"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[32][i-1];
+          }
         }
         break;
       case "33":
@@ -419,6 +515,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<6; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/resistance/ds"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[33][i-1];
+          }
         }
         break;
       case "34":
@@ -429,6 +528,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/resistance/da"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[34][i-1];
+          }
         }
         break;
     //nova
@@ -440,6 +542,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/nova/kaiser"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[35][i-1];
+          }
         }
         break;
       case "36":
@@ -450,6 +555,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/nova/ab"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[36][i-1];
+          }
         }
         break;
       case "37":
@@ -460,6 +568,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<9; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/nova/cadena"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[37][i-1];
+          }
         }
         break;
       case "38":
@@ -470,6 +581,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<9; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/nova/kain"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[38][i-1];
+          }
         }
         break;
     //sengoku
@@ -481,6 +595,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/sengoku/hayato"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[39][i-1];
+          }
         }
         break;
       case "40":
@@ -491,6 +608,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<10; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/sengoku/kanna"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[40][i-1];
+          }
         }
         break;
     //flora
@@ -502,6 +622,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/flora/adele"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[41][i-1];
+          }
         }
         break;
       case "42":
@@ -512,6 +635,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<9; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/flora/ark"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[42][i-1];
+          }
         }
         break;
       case "43":
@@ -522,6 +648,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/flora/illium"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[43][i-1];
+          }
         }
         break;
     //anima
@@ -533,6 +662,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<10; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/anima/hoyoung"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[44][i-1];
+          }
         }
         break;
       case "45":
@@ -543,6 +675,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/anima/lara"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[45][i-1];
+          }
         }
         break;
     //other
@@ -554,6 +689,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/other/kinesis"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[46][i-1];
+          }
         }
         break;
       case "47":
@@ -564,6 +702,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<10; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/other/zero"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[47][i-1];
+          }
         }
         break;
       case "48":
@@ -574,6 +715,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<9; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/other/bt"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[48][i-1];
+          }
         }
         break;
     //default

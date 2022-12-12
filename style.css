@@ -89,8 +89,9 @@ body{
     margin-left: 50px;
     background-repeat:no-repeat;
     background-size:100%;
-    text-align:center;
-    padding-left: 15px;
+    white-space: nowrap;
+    display: flex;
+    justify-content:center;
     padding-top: 60px;
 }
 
@@ -101,8 +102,9 @@ body{
     margin-left: 190px;
     background-repeat:no-repeat;
     background-size:100%;
-    text-align:center;
-    padding-left: 15px;
+    white-space: nowrap;
+    display: flex;
+    justify-content:center;
     padding-top: 60px;
 }
 
@@ -113,8 +115,9 @@ body{
     margin-left: 330px;
     background-repeat:no-repeat;
     background-size:100%;
-    text-align:center;
-    padding-left: 15px;
+    white-space: nowrap;
+    display: flex;
+    justify-content:center;
     padding-top: 60px;
 }
 
@@ -125,8 +128,9 @@ body{
     margin-left: 50px;
     background-repeat:no-repeat;
     background-size:100%;
-    text-align:center;
-    padding-left: 15px;
+    white-space: nowrap;
+    display: flex;
+    justify-content:center;
     padding-top: 60px;
 }
 
@@ -137,8 +141,9 @@ body{
     margin-left: 190px;
     background-repeat:no-repeat;
     background-size:100%;
-    text-align:center;
-    padding-left: 15px;
+    white-space: nowrap;
+    display: flex;
+    justify-content:center;
     padding-top: 60px;
 }
 
@@ -149,8 +154,9 @@ body{
     margin-left: 330px;
     background-repeat:no-repeat;
     background-size:100%;
-    text-align:center;
-    padding-left: 15px;
+    white-space: nowrap;
+    display: flex;
+    justify-content:center;
     padding-top: 60px;
 }
 
@@ -161,8 +167,9 @@ body{
     margin-left: 50px;
     background-repeat:no-repeat;
     background-size:100%;
-    text-align:center;
-    padding-left: 15px;
+    white-space: nowrap;
+    display: flex;
+    justify-content:center;
     padding-top: 60px;
 }
 
@@ -173,8 +180,9 @@ body{
     margin-left: 190px;
     background-repeat:no-repeat;
     background-size:100%;
-    text-align:center;
-    padding-left: 15px;
+    white-space: nowrap;
+    display: flex;
+    justify-content:center;
     padding-top: 60px;
 }
 
@@ -185,8 +193,9 @@ body{
     margin-left: 330px;
     background-repeat:no-repeat;
     background-size:100%;
-    text-align:center;
-    padding-left: 15px;
+    white-space: nowrap;
+    display: flex;
+    justify-content:center;
     padding-top: 60px;
 }
 
