@@ -5,11 +5,18 @@ function changeBackgroundImage(element) {
       for(let i=1; i<10; i++){
       let currentnode=document.getElementById("node"+i);
       currentnode.style.backgroundImage = "none";
+      currentnode.onmouseout=function(){
+        currentnode.innerHTML = "";
+      }
       }
 
-    //declare button name and ia section
+      //array of skill names
+      var test = [
+        "test1","test2","test3","test4","test5","test6"
+      ];
+
+    //declare button name
     let buttonName = document.getElementById("jobBtn");
-    let iaText = document.getElementById("iaText");
   
     // Get the selected option from the dropdown
     var selectedOption = element.value;
@@ -25,6 +32,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/explorer/hero"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= test[i-1];
+          }
         }
         break;
       case "1":

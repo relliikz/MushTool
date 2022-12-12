@@ -89,6 +89,9 @@ body{
     margin-left: 50px;
     background-repeat:no-repeat;
     background-size:100%;
+    text-align:center;
+    padding-left: 15px;
+    padding-top: 60px;
 }
 
 #node2{
@@ -98,6 +101,9 @@ body{
     margin-left: 190px;
     background-repeat:no-repeat;
     background-size:100%;
+    text-align:center;
+    padding-left: 15px;
+    padding-top: 60px;
 }
 
 #node3{
@@ -107,6 +113,9 @@ body{
     margin-left: 330px;
     background-repeat:no-repeat;
     background-size:100%;
+    text-align:center;
+    padding-left: 15px;
+    padding-top: 60px;
 }
 
 #node4{
@@ -116,6 +125,9 @@ body{
     margin-left: 50px;
     background-repeat:no-repeat;
     background-size:100%;
+    text-align:center;
+    padding-left: 15px;
+    padding-top: 60px;
 }
 
 #node5{
@@ -125,6 +137,9 @@ body{
     margin-left: 190px;
     background-repeat:no-repeat;
     background-size:100%;
+    text-align:center;
+    padding-left: 15px;
+    padding-top: 60px;
 }
 
 #node6{
@@ -134,6 +149,9 @@ body{
     margin-left: 330px;
     background-repeat:no-repeat;
     background-size:100%;
+    text-align:center;
+    padding-left: 15px;
+    padding-top: 60px;
 }
 
 #node7{
@@ -143,6 +161,9 @@ body{
     margin-left: 50px;
     background-repeat:no-repeat;
     background-size:100%;
+    text-align:center;
+    padding-left: 15px;
+    padding-top: 60px;
 }
 
 #node8{
@@ -152,6 +173,9 @@ body{
     margin-left: 190px;
     background-repeat:no-repeat;
     background-size:100%;
+    text-align:center;
+    padding-left: 15px;
+    padding-top: 60px;
 }
 
 #node9{
@@ -161,6 +185,9 @@ body{
     margin-left: 330px;
     background-repeat:no-repeat;
     background-size:100%;
+    text-align:center;
+    padding-left: 15px;
+    padding-top: 60px;
 }
 
 /* nav bar */
@@ -187,9 +214,6 @@ body{
     height: 350px;
     margin-top:-50px;
     margin-left: 150px;
-/*     background-image:url(assets/iamenu.png);
-    background-repeat:no-repeat;
-    background-size:50%; */
 }
 
 #ia1{
@@ -226,4 +250,3 @@ body{
     padding:35px;
 
 }
-
