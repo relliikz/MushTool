@@ -11,8 +11,56 @@ function changeBackgroundImage(element) {
       }
 
       //array of skill names
-      var test = [
-        "test1","test2","test3","test4","test5","test6"
+      var skills = [
+        ["Raging Blow","Cry Valhalla","Final Attack","Beam Blade","Rising Rage","Puncture"],
+        ["Blast","Divine Judgement+Mark","Divine Charge","Heaven's Hammer","Smite Shield","Final Attack"],
+        ["Dark Impale","Gungir's Descent","Evil Eye","Nightshade Explosion","Final Attack","Leap Att/Rush/Upwards Charge"],
+        ["Angel Ray","Big Bang","Bahamut","Heal/Angelic Wrath","Genesis/Triumph Feather","Heavens Door/Fountain"],
+        ["Chain Lightning","Thunder Sphere","Lightning Orb","Blizzard","Elquines","Frozen Orb"],
+        ["Flame Sweep","Mist Eruption","Ignite","Teleport Mastery/Creeping Toxin","Flame Haze","Meteor Shower","Meggido Flame","Ifrit","Inferno Aura"],
+        ["Blade Fury","Sudden Raid","Blade Ascension","Phantom Blow","Blade Clone","Asura's Anger"],
+        ["Assassinate","Cruel Stab","Meso Explosion","Sudden Raid","Dark Flare","Shadow Veil"],
+        ["Quad Throw","Assassin's Mark","Showdown","Dark Flare","Death Star","Sudden Raid"],
+        ["Cardinal Burst","Cardinal Deluge","Cardinal Torrent","Shadow Raven","Swarm Shot","Glyph of Impalement","Ancient Astra","Triple Impact","Combo Assault"],
+        ["Snipe/Empowered","Piercing Arrow/Empowered","High Speed Shot/Arrow Illusion","Final Attack","Bolt Burst/Frostprey"],
+        ["Hurricane","Final Attack","Quiver Cartridge","Arrow Blaster/Speed Mirage","Arrow Stream","Phoenix"],
+        ["Cannon Barrage","Cannon Bazooka","Rolling Rainbow","Monkey Militia","Anchor Away","Monkey Fury/Monkey Mortar"],
+        ["Octopunch","Sea Serpent/Raging Serpent","Nautilus Strike","Hook Bomber","Corkscrew Blow","Serpent Burst/Serpent Assault"],
+        ["Eight Legs Easton","Broadside","Scurvy Summons","Nautilus Strike","Siege Bomber","Ugly Bomb","Rapid Fire","Brain Scrambler","Majestic Presence"],
+        ["Planet Buster","Vortex Cross","Falling Stars/Turret Deployment","Singularity Shock","Starforce Salvo/Strikeforce","Backup Beatdown/Starfall"],
+        ["Moon Dancer/Speeding Sunset","Crescent Divide/Solar Pierce","Styx Crossing"],
+        ["Orbital Flame","Dragon Blaze","Blazing Extinction","Cinder Maelstrom","Towering Inferno","Cataclysm"],
+        ["Song of Heaven","Trifling Wind","Storm Bringer","Fairy Spiral","Sentient Arrow","Monsoon"],
+        ["Quintuple Star","Shadow Spark","Shadow Bat","Dark Omen","Shadow Stitch","Dominion"],
+        ["Ascension","Thunder","Shark Sweep","Thunderbolt","Annihalate","Gale/Typhoon"],
+        ["Radiant Cross","Four-Point Assault","Charging Light","Final Attack","Royal Guard"],
+        ["Wrath of Enlil","Spikes Royale","Leaf Tornado/Gust Dive","Ishtars Ring","Stunning Strikes","Unicorn Spike","Rising Rush","Lightning Edge","Elemental Knights"],
+        ["Beyond Blade","Final Blow","Final Attack","Smash Swing","Maha's Domain","Hunter's Prey"],
+        ["Mana Burst","Wind Circle/Flash/Breath","Earth Circle/Flash/Breath","Dragon Dive","Dragon Flash","Magic Debris","Thunder Circle/Flash/Breath","Dragon Spark","Dragon Breath/Return"],
+        ["Impeccable Memory 4","Impeccable Memory 3","Carte Rose Finale","Mille Aiguilles","Carte Blanc/Noir","Blason Fantome","Penonmbre","Impeccable Memory 2"],    
+        ["Reflection","Apocalypse","Ender","Spectral Light","Morning Star","Death Scythe"],
+        ["Spirit Claw","Bomb Punch","Fox Spirits","Spirit Incarnation","Spirit Frenzy","Death Mark","Spirit Trap","Soul Splitter","Shockwave Punch"],
+        ["Finishing Blow","Dark Shock","Condemnation","Sweeping Staff","Dark Genesis","Battle Burst"],
+        ["Wild Arrow Blast","Final Attack","Summon Jaguar","Exploding Arrows/Jag Rampage","Hunting Assistant Unit","Sonic Roar/Jag Soul","Swipe","Drill Salvo","Dash'nSlash/White Heat Rush"],
+        ["Homing Beacon/Advanced","Heavy/AP Salvo Plus","Distortion Bomb","Rock'nShock","Bots'nTots","Robo Launcher RM7"],
+        ["Magnum Punch","Double Blast","Revolving Cannon","Shotgun Punch","Hammer Smash","Bunker Blaster Explosion"],
+        ["Mecha Purge","Beam Dance","Hypogram Field","Triangulation Boost","Pinpoint Salvo","Aegis System","Quicksilver","Diagonal Chase","Combat Switch"],
+        ["Demon Impact","Demon Lash","Cerberus Chomp","Infernal Concussion","Demon Cry"],
+        ["Exceed:Execution","Nether Shield","Infernal Exceed","Exceed:Lunar Slash","Thousand Swords","Exceed:Demon Strike"],
+        ["Gigas Wave","Wing Beat","Tempest Blades","Inferno Breath","Stone Dragon","Blade Burst"],
+        ["Soul Seeker","Trinity","Celestial Roar","Supreme Supernova","Soul Resonance","Pink Pummel"],
+        ["Thrash/Muscle Mem/Reign","Summon Brick","Summon Spiked Bat","Summon Daggers/Shuriken","Summon Shotgun/Decoy Bomb","Summon Scimitar/Claw","Chain Arts:Beatdown","Crush/Veteran Shadowdealer"],
+        ["Strike Arrow/Chasing Shot","Dragon Fang/Lasting Grudge","Death's Blessing/Unseen Sniper","Shaft Break","Falling Dust","Scattering Shot","Chain Sickle/Poison Needle","Phantom Blade/Tearing Knife"],
+        ["Rai Blade Flash","Falcon's Honor","Rai Sanrenzen","Hitokiri Strike","Shinsoku/Battoujutsu","Sudden Strike"],
+        ["Shikigami Haunting","Exorcist Charm","Ghost Yaksha Boss","Kishin Shoukan","Yosuzume","Tengu Strike","Vanquishers Charm","Shikigami Doppelganger","Nine-tailed Fury"],
+        ["Cleave","Hunting Decree/Proclaimation","Reign/Plummet","Aether Bloom/Torrent","Aether Forge/Summons","Magic Dispatch/Aetherial"],
+        ["Overcharge/Basic Drive","Ominous/Vivid/Nightmare","Impending Death/Vengeful","Abyssal Drive/Unbridled","Gust Drive/Insatiable","Creeping Terror/Restraint/Agony","Unstoppable/Tenacious","Scarlet Charge/Grevious"],
+        ["Radiant/Winged Javelin","Machina+Reaction","Destruction2","Longinus Spear","Umbral Brand 3","Deus and Ex"],
+        ["Clone","Humanity","Earth","Heaven","Star Vortex","Seeking Ghost Flame","Butterfly Dream","Gourd/Thousand Ton Stone","Degeneration"],
+        ["Essence Sprinkle","Dragon Vein Eruption","Dragon Vein Absorption","Mountain Seeds","Wakeup Call","Mountain Kid"],
+        ["Psychic Grab","Ultimate-BPM","Ultimate-Metal Press","Ultimate-Trainwreck","Kinetic Combo","Mind Break"],
+        ["Rolling Cross","Rolling Assault","Spin Cutter","Wind Striker","Wind Cutter","Storm Break","Piercing Thrust","Moon Strike","Flash Assault"],
+        ["Paw Swipe/Strikes","Lil'Fort","Fishy Slap","Three-Point Pounce","Leopards Paw/Roar","","Formation Attack/Bombers","Tornado Flight/Formation"]
       ];
 
     //declare button name
@@ -33,7 +81,7 @@ function changeBackgroundImage(element) {
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/explorer/hero"+ i +".png')";
           currentnode.onmouseover = function(){
-            currentnode.innerHTML= test[i-1];
+            currentnode.innerHTML= skills[0][i-1];
           }
         }
         break;
@@ -45,6 +93,9 @@ function changeBackgroundImage(element) {
         for(let i=1; i<7; i++){
           let currentnode=document.getElementById("node"+i);
           currentnode.style.backgroundImage = "url('nodes/explorer/paladin"+ i +".png')";
+          currentnode.onmouseover = function(){
+            currentnode.innerHTML= skills[1][i-1];
+          }
         }
         break;
       case "2":
