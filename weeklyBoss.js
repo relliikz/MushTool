@@ -53,7 +53,7 @@ function updateHeader() {
                 break;
 
                 case "1":
-                buttonName.innerHTML = "2 Mule";
+                buttonName.innerHTML = "2 Mules";
                 for(let i=1; i<3; i++){
                   let currentboss=document.getElementById("boss"+i);
                     currentboss.style.display = "block";
@@ -61,7 +61,7 @@ function updateHeader() {
                 break;
 
                 case "2":
-                buttonName.innerHTML = "3 Mule";
+                buttonName.innerHTML = "3 Mules";
                 for(let i=1; i<4; i++){
                   let currentboss=document.getElementById("boss"+i);
                     currentboss.style.display = "block";
@@ -69,7 +69,7 @@ function updateHeader() {
                 break;
 
                 case "3":
-                buttonName.innerHTML = "4 Mule";
+                buttonName.innerHTML = "4 Mules";
                 for(let i=1; i<5; i++){
                   let currentboss=document.getElementById("boss"+i);
                     currentboss.style.display = "block";
@@ -77,7 +77,7 @@ function updateHeader() {
                 break;
 
                 case "4":
-                buttonName.innerHTML = "5 Mule";
+                buttonName.innerHTML = "5 Mules";
                 for(let i=1; i<6; i++){
                   let currentboss=document.getElementById("boss"+i);
                     currentboss.style.display = "block";
@@ -85,7 +85,7 @@ function updateHeader() {
                 break;
 
                 case "5":
-                buttonName.innerHTML = "6 Mule";
+                buttonName.innerHTML = "6 Mules";
                 for(let i=1; i<7; i++){
                   let currentboss=document.getElementById("boss"+i);
                     currentboss.style.display = "block";
