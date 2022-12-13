@@ -44,15 +44,20 @@
                 <ul class="dropdown-menu" aria-labelledby="muleBtn">
                   <h6 class="dropdown-header">Mules #</h6>
                   <div class="dropdown-divider"></div>
-                  <li><button class="dropdown-item" type="button" value="0" onclick="">1</button></li>
-                  <li><button class="dropdown-item" type="button" value="1" onclick="">2</button></li>
-                  <li><button class="dropdown-item" type="button" value="2" onclick="">3</button></li>
-                  <li><button class="dropdown-item" type="button" value="3" onclick="">4</button></li>
-                  <li><button class="dropdown-item" type="button" value="4" onclick="">5</button></li>
-                  <li><button class="dropdown-item" type="button" value="5" onclick="">6</button></li>
+                  <li><button class="dropdown-item" type="button" value="0" onclick="displayMuleDivs(this)">1</button></li>
+                  <li><button class="dropdown-item" type="button" value="1" onclick="displayMuleDivs(this)">2</button></li>
+                  <li><button class="dropdown-item" type="button" value="2" onclick="displayMuleDivs(this)">3</button></li>
+                  <li><button class="dropdown-item" type="button" value="3" onclick="displayMuleDivs(this)">4</button></li>
+                  <li><button class="dropdown-item" type="button" value="4" onclick="displayMuleDivs(this)">5</button></li>
+                  <li><button class="dropdown-item" type="button" value="5" onclick="displayMuleDivs(this)">6</button></li>
                 </ul>
             </div>
-            <div id="bossOne" class="container-fluid bg-warning text-white">
+            <div id="totalBossIncome" class="container-fluid bg-danger text-white">
+              <h5>Final Income:</h5>
+                <h6 id="totalIncome"></h6>
+            </div>
+
+            <div id="boss1" class="container-fluid bg-warning text-white">
               <h1 id="muleTitle">Mule #1</h1>
               <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="check1" onclick="updateHeader()" value="81000000">
@@ -115,14 +120,338 @@
                 <label class="form-check-label" for="check15">Akechi Mitsuhide</label>
               </div>
               <h4 id="totalIncomeTitle">Total Income:</h3>
-                <h4 id="totalIncome"></h4>
+                <h4 id="bossIncome1"></h4>
+              </div>
 
+            <div id="boss2" class="container-fluid bg-warning text-white">
+              <h1 id="muleTitle">Mule #2</h1>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check1" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check1">Chaos Zakum</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check2" onclick="updateHeader()" value="95062500">
+                <label class="form-check-label" for="check2">Hard Magnus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check3" onclick="updateHeader()" value="56250000">
+                <label class="form-check-label" for="check3">Hard Hilla</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check4" onclick="updateHeader()" value="132250000">
+                <label class="form-check-label" for="check4">Chaos Papulatus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check5" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check5">Chaos Pierre</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check6" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check6">Chaos Von Bon</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check7" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check7">C Crimson Queen</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check8" onclick="updateHeader()" value="105062500">
+                <label class="form-check-label" for="check8">Chaos Vellum</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check9" onclick="updateHeader()" value="64000000">
+                <label class="form-check-label" for="check9">Chaos Pink Bean</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check10" onclick="updateHeader()" value="72250000">
+                <label class="form-check-label" for="check10">Normal Cygnus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check11" onclick="updateHeader()" value="162562500">
+                <label class="form-check-label" for="check11">Normal Lotus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check12" onclick="updateHeader()" value="169000000">
+                <label class="form-check-label" for="check12">Normal Damien</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check13" onclick="updateHeader()" value="171610000">
+                <label class="form-check-label" for="check13">Normal Slime</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check14" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check14">Princess No.</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check15" onclick="updateHeader()" value="144000000">
+                <label class="form-check-label" for="check15">Akechi Mitsuhide</label>
+              </div>
+              <h4 id="totalIncomeTitle">Total Income:</h3>
+                <h4 id="bossIncome2"></h4>
             </div>
-            <div id="bossTwo" class="container-fluid bg-warning text-white"></div>
-            <div id="bossThree" class="container-fluid bg-warning text-white"></div>
-            <div id="bossFour" class="container-fluid bg-warning text-white"></div>
-            <div id="bossFive" class="container-fluid bg-warning text-white"></div>
-            <div id="bossSix" class="container-fluid bg-warning text-white"></div>
+
+            <div id="boss3" class="container-fluid bg-warning text-white">
+              <h1 id="muleTitle">Mule #3</h1>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check1" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check1">Chaos Zakum</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check2" onclick="updateHeader()" value="95062500">
+                <label class="form-check-label" for="check2">Hard Magnus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check3" onclick="updateHeader()" value="56250000">
+                <label class="form-check-label" for="check3">Hard Hilla</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check4" onclick="updateHeader()" value="132250000">
+                <label class="form-check-label" for="check4">Chaos Papulatus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check5" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check5">Chaos Pierre</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check6" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check6">Chaos Von Bon</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check7" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check7">C Crimson Queen</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check8" onclick="updateHeader()" value="105062500">
+                <label class="form-check-label" for="check8">Chaos Vellum</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check9" onclick="updateHeader()" value="64000000">
+                <label class="form-check-label" for="check9">Chaos Pink Bean</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check10" onclick="updateHeader()" value="72250000">
+                <label class="form-check-label" for="check10">Normal Cygnus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check11" onclick="updateHeader()" value="162562500">
+                <label class="form-check-label" for="check11">Normal Lotus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check12" onclick="updateHeader()" value="169000000">
+                <label class="form-check-label" for="check12">Normal Damien</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check13" onclick="updateHeader()" value="171610000">
+                <label class="form-check-label" for="check13">Normal Slime</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check14" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check14">Princess No.</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check15" onclick="updateHeader()" value="144000000">
+                <label class="form-check-label" for="check15">Akechi Mitsuhide</label>
+              </div>
+              <h4 id="totalIncomeTitle">Total Income:</h3>
+                <h4 id="bossIncome3"></h4>
+            </div>
+
+            <div id="boss4" class="container-fluid bg-warning text-white">
+              <h1 id="muleTitle">Mule #4</h1>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check1" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check1">Chaos Zakum</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check2" onclick="updateHeader()" value="95062500">
+                <label class="form-check-label" for="check2">Hard Magnus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check3" onclick="updateHeader()" value="56250000">
+                <label class="form-check-label" for="check3">Hard Hilla</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check4" onclick="updateHeader()" value="132250000">
+                <label class="form-check-label" for="check4">Chaos Papulatus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check5" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check5">Chaos Pierre</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check6" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check6">Chaos Von Bon</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check7" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check7">C Crimson Queen</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check8" onclick="updateHeader()" value="105062500">
+                <label class="form-check-label" for="check8">Chaos Vellum</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check9" onclick="updateHeader()" value="64000000">
+                <label class="form-check-label" for="check9">Chaos Pink Bean</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check10" onclick="updateHeader()" value="72250000">
+                <label class="form-check-label" for="check10">Normal Cygnus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check11" onclick="updateHeader()" value="162562500">
+                <label class="form-check-label" for="check11">Normal Lotus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check12" onclick="updateHeader()" value="169000000">
+                <label class="form-check-label" for="check12">Normal Damien</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check13" onclick="updateHeader()" value="171610000">
+                <label class="form-check-label" for="check13">Normal Slime</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check14" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check14">Princess No.</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check15" onclick="updateHeader()" value="144000000">
+                <label class="form-check-label" for="check15">Akechi Mitsuhide</label>
+              </div>
+              <h4 id="totalIncomeTitle">Total Income:</h3>
+                <h4 id="bossIncome4"></h4>
+            </div>
+
+            <div id="boss5" class="container-fluid bg-warning text-white">
+              <h1 id="muleTitle">Mule #5</h1>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check1" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check1">Chaos Zakum</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check2" onclick="updateHeader()" value="95062500">
+                <label class="form-check-label" for="check2">Hard Magnus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check3" onclick="updateHeader()" value="56250000">
+                <label class="form-check-label" for="check3">Hard Hilla</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check4" onclick="updateHeader()" value="132250000">
+                <label class="form-check-label" for="check4">Chaos Papulatus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check5" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check5">Chaos Pierre</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check6" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check6">Chaos Von Bon</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check7" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check7">C Crimson Queen</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check8" onclick="updateHeader()" value="105062500">
+                <label class="form-check-label" for="check8">Chaos Vellum</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check9" onclick="updateHeader()" value="64000000">
+                <label class="form-check-label" for="check9">Chaos Pink Bean</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check10" onclick="updateHeader()" value="72250000">
+                <label class="form-check-label" for="check10">Normal Cygnus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check11" onclick="updateHeader()" value="162562500">
+                <label class="form-check-label" for="check11">Normal Lotus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check12" onclick="updateHeader()" value="169000000">
+                <label class="form-check-label" for="check12">Normal Damien</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check13" onclick="updateHeader()" value="171610000">
+                <label class="form-check-label" for="check13">Normal Slime</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check14" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check14">Princess No.</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check15" onclick="updateHeader()" value="144000000">
+                <label class="form-check-label" for="check15">Akechi Mitsuhide</label>
+              </div>
+              <h4 id="totalIncomeTitle">Total Income:</h3>
+                <h4 id="bossIncome5"></h4>
+            </div>
+
+            <div id="boss6" class="container-fluid bg-warning text-white">
+              <h1 id="muleTitle">Mule #6</h1>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check1" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check1">Chaos Zakum</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check2" onclick="updateHeader()" value="95062500">
+                <label class="form-check-label" for="check2">Hard Magnus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check3" onclick="updateHeader()" value="56250000">
+                <label class="form-check-label" for="check3">Hard Hilla</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check4" onclick="updateHeader()" value="132250000">
+                <label class="form-check-label" for="check4">Chaos Papulatus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check5" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check5">Chaos Pierre</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check6" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check6">Chaos Von Bon</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check7" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check7">C Crimson Queen</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check8" onclick="updateHeader()" value="105062500">
+                <label class="form-check-label" for="check8">Chaos Vellum</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check9" onclick="updateHeader()" value="64000000">
+                <label class="form-check-label" for="check9">Chaos Pink Bean</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check10" onclick="updateHeader()" value="72250000">
+                <label class="form-check-label" for="check10">Normal Cygnus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check11" onclick="updateHeader()" value="162562500">
+                <label class="form-check-label" for="check11">Normal Lotus</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check12" onclick="updateHeader()" value="169000000">
+                <label class="form-check-label" for="check12">Normal Damien</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check13" onclick="updateHeader()" value="171610000">
+                <label class="form-check-label" for="check13">Normal Slime</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check14" onclick="updateHeader()" value="81000000">
+                <label class="form-check-label" for="check14">Princess No.</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check15" onclick="updateHeader()" value="144000000">
+                <label class="form-check-label" for="check15">Akechi Mitsuhide</label>
+              </div>
+              <h4 id="totalIncomeTitle">Total Income:</h3>
+                <h4 id="bossIncome6"></h4>
+            </div>
               
 
 

@@ -71,6 +71,9 @@ function changeBackgroundImage(element) {
   
     // Get the selected option from the dropdown
     var selectedOption = element.value;
+
+    // div declaration
+    let div1 = document.getElementById("bossOne");
   
     // Use a switch case to set the appropriate background image
     switch (selectedOption) {
